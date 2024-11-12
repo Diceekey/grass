@@ -1,0 +1,42 @@
+{
+  "name": "GrassBot",
+  "version": "2.2.1",
+  "description": "A bot for establishing WebSocket connections through various HTTP and SOCKS proxies for farming Grass Airdrop Season 2.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js --dev",
+    "check": "node src/utils/proxyChecker.js",
+    "clean": "node src/utils/cleanProxies.js",
+    "update": "npm update"
+  },
+  "keywords": [
+    "WebSocket",
+    "proxy",
+    "SOCKS",
+    "HTTP",
+    "bot",
+    "getgrass",
+    "grass",
+    "airdrops",
+    "farming"
+  ],
+  "author": "ItbaArts",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "colors": "^1.4.0",
+    "https-proxy-agent": "^7.0.4",
+    "inquirer": "^8.2.6",
+    "socks-proxy-agent": "^8.0.2",
+    "uuid": "^9.0.1",
+    "ws": "^8.16.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}
